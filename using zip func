@@ -1,0 +1,9 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n,x=map(int,input().split())
+m=[]
+for i in range(x):
+    x=list(map(float,input().split()))
+    m.append(x)        
+averages = [sum(col) / len(col) for col in zip(*m)]
+for i in averages:
+    print(i)
